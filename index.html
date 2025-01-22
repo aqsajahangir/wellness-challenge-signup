@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Day Workplace Wellness Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button {
+            width: 100%;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Join the 7-Day Workplace Wellness Challenge</h1>
+        <p>Transform your posture, reduce pain, and feel better at work in just 7 days! Sign up now to get free daily tips, exercises, and resources directly to your inbox.</p>
+        
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <button type="submit">Sign Me Up!</button>
+        </form>
+
+        <div class="footer">
+            <p>We respect your privacy. No spam, ever. <a href="/privacy-policy">Privacy Policy</a></p>
+        </div>
+    </div>
+</body>
+</html>
